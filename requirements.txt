@@ -1,0 +1,7 @@
+openai>=1.55.0
+python-dotenv>=1.0.1
+numpy>=1.26.0
+folium>=0.17.0
+flask>=3.0.0
+twilio>=9.0.0
+

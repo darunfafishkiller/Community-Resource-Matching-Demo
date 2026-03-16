@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f695d4f6b1603da38b8533edbe7a319 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f695d4f6b1603da38b8533edbe7a319" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f695d4f6b1603da38b8533edbe7a319 = L.map(
+                "map_5f695d4f6b1603da38b8533edbe7a319",
+                {
+                    center: [42.2792, -83.7388],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9e01a9a72a0828b0cb94e263ef881363 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9e01a9a72a0828b0cb94e263ef881363.addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+            var marker_e5f14c43f421b7c8c43f1b42bb7b42c6 = L.marker(
+                [42.2792, -83.7388],
+                {
+}
+            ).addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+            var icon_49fd0e2aea892b6ce33c6343193413ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d091152a2a9624ab7049d9bac070459 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78242969a584c4284d04a39e20952449 = $(`<div id="html_78242969a584c4284d04a39e20952449" style="width: 100.0%; height: 100.0%;">ID: 4<br>Category: equipment<br>Description: Community group offering folding tables and chairs near the central library<br>Quantity: 4 folding tables and 30 chairs<br>Time: Saturday afternoons<br>Location: right next to the central library in Ann Arbor<br>Similarity: 0.683<br>Original text: A small community group right next to the Ann Arbor central library can offer 4 folding tables and about 30 chairs for weekend workshops.</div>`)[0];
+                popup_8d091152a2a9624ab7049d9bac070459.setContent(html_78242969a584c4284d04a39e20952449);
+            
+        
+
+        marker_e5f14c43f421b7c8c43f1b42bb7b42c6.bindPopup(popup_8d091152a2a9624ab7049d9bac070459)
+        ;
+
+        
+    
+    
+            marker_e5f14c43f421b7c8c43f1b42bb7b42c6.bindTooltip(
+                `<div>
+                     equipment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e5f14c43f421b7c8c43f1b42bb7b42c6.setIcon(icon_49fd0e2aea892b6ce33c6343193413ee);
+            
+    
+            var marker_5e288d315cf15036619f177883d4e338 = L.marker(
+                [42.279, -83.739],
+                {
+}
+            ).addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+            var icon_cf3153b4b11e335f0a832fd1fcd8e5a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96979f5d8009de478017c1d6b2b10d3c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a6c0bf83ca4d57505cfce43323c1388b = $(`<div id="html_a6c0bf83ca4d57505cfce43323c1388b" style="width: 100.0%; height: 100.0%;">ID: 3<br>Category: equipment<br>Description: Resident group lending around 40 folding chairs<br>Quantity: 40 chairs<br>Time: weekends<br>Location: near the central library in Ann Arbor<br>Similarity: 0.570<br>Original text: A resident group close to the Ann Arbor central library can lend around 40 folding chairs for weekend community activities.</div>`)[0];
+                popup_96979f5d8009de478017c1d6b2b10d3c.setContent(html_a6c0bf83ca4d57505cfce43323c1388b);
+            
+        
+
+        marker_5e288d315cf15036619f177883d4e338.bindPopup(popup_96979f5d8009de478017c1d6b2b10d3c)
+        ;
+
+        
+    
+    
+            marker_5e288d315cf15036619f177883d4e338.bindTooltip(
+                `<div>
+                     equipment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e288d315cf15036619f177883d4e338.setIcon(icon_cf3153b4b11e335f0a832fd1fcd8e5a1);
+            
+    
+            var marker_c4dfdf42d98eaac6182142e535eb86e8 = L.marker(
+                [42.2705, -83.7225],
+                {
+}
+            ).addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+            var icon_b81c6e16662898b264bf99933999b032 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84a6b7a1dd7ffaf7563dadc28d39bcca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13e391ead1928a92f7a006e43aee913b = $(`<div id="html_13e391ead1928a92f7a006e43aee913b" style="width: 100.0%; height: 100.0%;">ID: 17<br>Category: equipment<br>Description: Faith community lending chairs and tables for neighborhood use<br>Quantity: 60 chairs and 10 tables<br>Time: most weekends<br>Location: near Washtenaw Avenue<br>Similarity: 0.544<br>Original text: A faith community near Washtenaw Avenue can lend about 60 chairs and 10 tables for neighborhood events on most weekends.</div>`)[0];
+                popup_84a6b7a1dd7ffaf7563dadc28d39bcca.setContent(html_13e391ead1928a92f7a006e43aee913b);
+            
+        
+
+        marker_c4dfdf42d98eaac6182142e535eb86e8.bindPopup(popup_84a6b7a1dd7ffaf7563dadc28d39bcca)
+        ;
+
+        
+    
+    
+            marker_c4dfdf42d98eaac6182142e535eb86e8.bindTooltip(
+                `<div>
+                     equipment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c4dfdf42d98eaac6182142e535eb86e8.setIcon(icon_b81c6e16662898b264bf99933999b032);
+            
+    
+            var marker_d56a18394171c9d3903560cfe59ce747 = L.marker(
+                [42.278, -83.738],
+                {
+}
+            ).addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+            var icon_bfe713135aa066cb4149c0ff1d04b0c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91cea3b6201b6d50d0da701907b3148a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31eb2529bc7d6455cc2987150a88756a = $(`<div id="html_31eb2529bc7d6455cc2987150a88756a" style="width: 100.0%; height: 100.0%;">ID: 13<br>Category: equipment<br>Description: Campus group lending folding tables and display boards<br>Quantity: 5 tables and 6 display boards<br>Time: during exam-free weeks<br>Location: central campus of University of Michigan<br>Similarity: 0.457<br>Original text: A campus organization on central campus can lend 5 folding tables and 6 display boards for community info fairs during exam-free weeks.</div>`)[0];
+                popup_91cea3b6201b6d50d0da701907b3148a.setContent(html_31eb2529bc7d6455cc2987150a88756a);
+            
+        
+
+        marker_d56a18394171c9d3903560cfe59ce747.bindPopup(popup_91cea3b6201b6d50d0da701907b3148a)
+        ;
+
+        
+    
+    
+            marker_d56a18394171c9d3903560cfe59ce747.bindTooltip(
+                `<div>
+                     equipment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d56a18394171c9d3903560cfe59ce747.setIcon(icon_bfe713135aa066cb4149c0ff1d04b0c8);
+            
+    
+            var marker_1bf58ca97a76d453b57dea59c8ae1163 = L.marker(
+                [42.2809, -83.7483],
+                {
+}
+            ).addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+            var icon_5de056036d6c259a5581f688817092cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c83931afe4fd41d6927dd845d23ec30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1f6d891f8eb64f37428e16b0ad80b94 = $(`<div id="html_f1f6d891f8eb64f37428e16b0ad80b94" style="width: 100.0%; height: 100.0%;">ID: 15<br>Category: equipment<br>Description: Local nonprofit lending laptops for digital literacy workshops<br>Quantity: 10 laptops<br>Time: weekday mornings<br>Location: downtown Ann Arbor<br>Similarity: 0.410<br>Original text: A local nonprofit in downtown Ann Arbor can lend 10 laptops for small digital literacy workshops on weekday mornings.</div>`)[0];
+                popup_1c83931afe4fd41d6927dd845d23ec30.setContent(html_f1f6d891f8eb64f37428e16b0ad80b94);
+            
+        
+
+        marker_1bf58ca97a76d453b57dea59c8ae1163.bindPopup(popup_1c83931afe4fd41d6927dd845d23ec30)
+        ;
+
+        
+    
+    
+            marker_1bf58ca97a76d453b57dea59c8ae1163.bindTooltip(
+                `<div>
+                     equipment
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1bf58ca97a76d453b57dea59c8ae1163.setIcon(icon_5de056036d6c259a5581f688817092cb);
+            
+    
+            var circle_marker_a01ecd39d5a5f859710f6944fe63da31 = L.circleMarker(
+                [42.29699312215832, -83.7141809841144],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_5f695d4f6b1603da38b8533edbe7a319);
+        
+    
+        var popup_20e9a8b2ec4b36311ddb72d084240284 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3912acac5cd38637dae7ffe6842dbf3 = $(`<div id="html_c3912acac5cd38637dae7ffe6842dbf3" style="width: 100.0%; height: 100.0%;">User location</div>`)[0];
+                popup_20e9a8b2ec4b36311ddb72d084240284.setContent(html_c3912acac5cd38637dae7ffe6842dbf3);
+            
+        
+
+        circle_marker_a01ecd39d5a5f859710f6944fe63da31.bindPopup(popup_20e9a8b2ec4b36311ddb72d084240284)
+        ;
+
+        
+    
+    
+            circle_marker_a01ecd39d5a5f859710f6944fe63da31.bindTooltip(
+                `<div>
+                     You (query)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
